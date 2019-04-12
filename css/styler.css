@@ -7,11 +7,13 @@ body{
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px){
     #logo{
-        left: 39%;
+        width: 500px;
+        height: 150px;
+        left: 25%;
         margin-top: 50px;
     }
     #body-content{
-        margin: 100px 100px 20px 100px;
+        margin: 220px 100px 20px 100px;
         padding: 30px;
     }
     .form-category{
@@ -52,6 +54,8 @@ body{
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
     #logo{
         left: 41%;
+        width: 200px;
+        height: auto;
     }
     #body-content{
         margin: 20px 300px;
@@ -84,6 +88,8 @@ body{
 @media only screen and (min-width: 1200px){
     #logo{
         left: 42%;
+        width: 200px;
+        height: auto;
     }
     #body-content{
         margin: 20px 400px;
@@ -120,8 +126,6 @@ body{
 }
 #logo{
     position: relative;
-    width: 200px;
-    height: auto;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(36, 37, 42, 0.05);
     transition: 1s ease-in-out;
