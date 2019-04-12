@@ -14,13 +14,13 @@
             <span class="form-category">
                 <label>Stat value</label>
                 <span id="radio-span">
-                    <input type="radio" name="stat-value" value="point" checked="checked"> Point<br>
+                    <label><input type="radio" name="stat-value" value="point" checked="checked"> Point</label><br>
                     <span class="about-stat-value">
-                        Point type gets the total downloads for a given period, for all packages or a specific package.<br><br>
+                        Gets the total downloads for a given period.<br><br>
                     </span>
-                    <input type="radio" name="stat-value" value="range"> Range<br>
+                    <label><input type="radio" name="stat-value" value="range"> Range</label><br>
                     <span class="about-stat-value">
-                        Range type gets the downloads per day for a given period, for all packages or a specific package.
+                        Gets the downloads per day for a given period.
                     </span>
                 </span>
             </span>
@@ -53,6 +53,14 @@
             <span>
                 <button id="query-btn" onclick="makeRequest()">Query</button>
             </span>
+        </div>
+        <!-- Stats Modal -->
+        <div id="stats-modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="fetch-data"></p>
+            </div>
         </div>
     </body>
 </html>
