@@ -41,6 +41,13 @@ body{
         height: 70px;
         border-radius: 50px;
     }
+    .close{
+        font-size: 50px;
+    }
+    .modal{
+        top: 50%;
+        height: 15%;
+    }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
     #logo{
@@ -66,6 +73,13 @@ body{
         font-size:20px;
         border-radius: 4px;
     }
+    .close{
+        font-size: 28px;
+    }
+    .modal{
+        top: 35%;
+        height: 30%;
+    }
 }
 @media only screen and (min-width: 1200px){
     #logo{
@@ -90,6 +104,13 @@ body{
     button{
         font-size:20px;
         border-radius: 4px;
+    }
+    .close{
+        font-size: 28px;
+    }
+    .modal{
+        top: 35%;
+        height: 30%;
     }
 }
 #logo-content{
@@ -155,10 +176,8 @@ button:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    top: 35%;
     left: 25%;
     width: 50%;
-    height: 30%;
     overflow: auto;
     background-color: rgba(36, 37, 42, 0.8);
     color: #fefefe;
@@ -175,7 +194,6 @@ button:hover {
 .close{
     color: white;
     float: right;
-    font-size: 28px;
     margin-right: 10px;
 }
 .close:hover, .close:focus{
