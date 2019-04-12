@@ -1,5 +1,9 @@
 # npm-query
-Get download stats for an NPM package
+Makes AJAX (Asynchronous JavaScript and XML) calls to https://api.npmjs.org/downloads/point/{period}[/{package}]
+
+This returns a JSON object detailing download statistics for a specified package.
+
+[npm/download-counts](https://github.com/npm/download-counts)
 
 ## Deployment
 Uses *Netlify* for deployment at https://npm-query.netlify.com/
