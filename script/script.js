@@ -45,13 +45,6 @@ function toggleFromToDate(element){
     }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    var statsModal = document.getElementById("stats-modal");
-    if (event.target == statsModal) {
-      statsModal.style.display = "none";
-    }
-}
 function closeModal(){
     var statsModal = document.getElementById("stats-modal");
     statsModal.style.display = "none";
