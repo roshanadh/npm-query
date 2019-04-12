@@ -3,6 +3,8 @@ Makes AJAX (Asynchronous JavaScript and XML) calls to https://api.npmjs.org/down
 
 This returns a JSON object detailing download statistics for a specified package.
 
+The JSON object is parsed to display the statistics.
+
 [npm/download-counts](https://github.com/npm/download-counts)
 
 ## Deployment
