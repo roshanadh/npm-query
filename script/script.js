@@ -24,50 +24,42 @@ function makeRequest(){
         fetchData.innerText = "";
 
         if(statValue == "point"){
-            console.log("POINT REACHED");
             var json = JSON.parse(http.responseText);
-            console.log(json);
             for(var key in json){
                 if(json.hasOwnProperty(key)){
                     fetchData.innerHTML += key.bold() + ": " + json[key] + "<br>";
-                    console.log(key.bold() + ": " + json[key]);
                 }
             }
         }
         else if(statValue == "range"){
-            console.log("RANGE REACHED");
             var json = JSON.parse(http.responseText);
             for(var key in json){
                 if(json.hasOwnProperty(key)){
                     if(key != "downloads"){
-                        console.log("DOWNLOAD NOT REACHED!");
                         fetchData.innerHTML += key.bold() + ": " + json[key] + "<br>";
-                        console.log(key.bold() + ": " + json[key]);
                     }
                     else{
-                        console.log("DOWNLOADS REACHED!");
                         var jsonArray = json.downloads;
                         jsonArray.forEach((nestedJson) => {
                             var needLineBreak = 0;
                             for(var nestedKey in nestedJson){
                                 fetchData.innerHTML += nestedKey.bold() + ": " + nestedJson[nestedKey] + " ";
+                                
+                                // Check if line break should be inserted
                                 needLineBreak = (needLineBreak + 1) % 2;
                                 if(needLineBreak == 0)
+                                // Concatenate every two lines: for downloads: <num> and day:<date>
+                                // Then after concatenating the two lines, break a line - repeat
                                     fetchData.innerHTML += "<br>";
-                                console.log(nestedKey, nestedJson[nestedKey]);
                             }
                         });
                     }
-                }
-                else{
-                    console.log("json doesnot have key!");
                 }
             }
         }   
         
     }
 }
-
 
 function toggleFromToDate(element){
     let fromDate = document.getElementById("from-date");
