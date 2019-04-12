@@ -45,9 +45,6 @@ input[type=text], input[type=date]{
     box-sizing: border-box;
     box-shadow: 0px 5px 20px rgba(36, 37, 42, 0.1);
 } 
-input[type="radio"] {
-   
-}
 #radio-span{
     display: inline-block;
     margin: 8px 0;
@@ -81,5 +78,6 @@ button:hover {
     width: 100%;
     display: inline-block;
     margin-bottom: 20px;
+    border-bottom: 1px solid rgba(36, 37, 42, 0.05);
 }
   
