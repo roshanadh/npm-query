@@ -17,6 +17,10 @@ function makeRequest(){
     http.send();
     http.onreadystatechange = (e) => {
         console.log(http.responseText);
+        let statsModal = document.getElementById("stats-modal");
+        let fetchData = document.getElementsByClassName("fetch-data")[0];
+        statsModal.style.display = "block";
+        fetchData.innerText = http.responseText;
     }
 }
 
@@ -24,7 +28,7 @@ function toggleFromToDate(element){
     let fromDate = document.getElementById("from-date");
     let toDate = document.getElementById("to-date");
     let period = element.value;
-    
+
     if(period != "none"){
         fromDate.disabled = true;
         toDate.disabled = true;
@@ -33,4 +37,16 @@ function toggleFromToDate(element){
         fromDate.disabled = false;
         toDate.disabled = false;
     }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    var statsModal = document.getElementById("stats-modal");
+    if (event.target == statsModal) {
+      statsModal.style.display = "none";
+    }
+}
+function closeModal(){
+    var statsModal = document.getElementById("stats-modal");
+    statsModal.style.display = "none";
 }
