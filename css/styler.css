@@ -5,33 +5,22 @@ body{
     font-size: 18px;
     color: rgba(36, 37, 42, 1);
 }
-@media only screen and (max-width: 800px){
-    #logo{
-        left: 38%;
-    }
-    #body-content{
-        margin: 20px 150px;
-        padding: 25px;
-    }
-    .form-category{
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
-    button{
-        font-size: 25px;
-    }
-}
 @media only screen and (min-width: 800px) and (max-width: 1000px){
     #logo{
         left: 39%;
+        margin-top: 50px;
     }
     #body-content{
-        margin: 20px 200px;
+        margin: 100px 100px 20px 100px;
         padding: 25px;
     }
     .form-category{
         font-size: 25px;
         margin-bottom: 30px;
+    }
+    .about-stat-value{
+        font-size: 18px;
+        color: gray;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
