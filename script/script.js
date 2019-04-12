@@ -1,10 +1,17 @@
 function makeRequest(){
     const http = new XMLHttpRequest();
+    let url;
     let pkg = document.getElementById("pkg-name").value; 
-    let fromDate = document.getElementById("from-date").value;
-    let toDate = document.getElementById("to-date").value;
     let statValue = document.querySelector('input[name="stat-value"]:checked').value;
-    let url='https://api.npmjs.org/downloads/' + statValue + '/' + fromDate + ':' + toDate + '/' + pkg;
+    let statFor = document.querySelector('input[name="stat-for"]:checked').value;
+    if(statFor == "none"){
+        let fromDate = document.getElementById("from-date").value;
+        let toDate = document.getElementById("to-date").value;
+        url='https://api.npmjs.org/downloads/' + statValue + '/' + fromDate + ':' + toDate + '/' + pkg;
+    }
+    else{
+        url='https://api.npmjs.org/downloads/' + statValue + '/' + statFor + '/' + pkg;
+    }
 
     http.open("GET", url);
     http.send();
@@ -17,9 +24,8 @@ function toggleFromToDate(element){
     let fromDate = document.getElementById("from-date");
     let toDate = document.getElementById("to-date");
     let period = element.value;
-    // console.log(period);
+    
     if(period != "none"){
-        // console.log("None");
         fromDate.disabled = true;
         toDate.disabled = true;
     }
