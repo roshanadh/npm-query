@@ -43,12 +43,20 @@ body{
         height: 70px;
         border-radius: 50px;
     }
+    .modal{
+        top: 40%;
+        height: 25%;
+        width: 80%;
+        left:10%; 
+    }
+    .modal-content{
+        line-height: 50px;
+    }
     .close{
         font-size: 50px;
     }
-    .modal{
-        top: 50%;
-        height: 15%;
+    .fetch-data{
+        font-size: 35px;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
@@ -77,12 +85,20 @@ body{
         font-size:20px;
         border-radius: 4px;
     }
-    .close{
-        font-size: 28px;
-    }
     .modal{
         top: 35%;
         height: 30%;
+        width: 50%;
+        left: 25%;
+    }
+    .modal-content{
+        line-height: 30px;
+    }
+    .close{
+        font-size: 28px;
+    }
+    .fetch-data{
+        font-size: 18px;
     }
 }
 @media only screen and (min-width: 1200px){
@@ -111,12 +127,20 @@ body{
         font-size:20px;
         border-radius: 4px;
     }
-    .close{
-        font-size: 28px;
-    }
     .modal{
         top: 35%;
         height: 30%;
+        width: 50%;
+        left: 25%;
+    }
+    .modal-content{
+        line-height: 30px;
+    }
+    .close{
+        font-size: 28px;
+    }
+    .fetch-data{
+        font-size: 18px;
     }
 }
 #logo-content{
@@ -180,8 +204,6 @@ button:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 25%;
-    width: 50%;
     overflow: auto;
     background-color: rgba(36, 37, 42, 0.8);
     color: #fefefe;
@@ -193,7 +215,6 @@ button:hover {
     margin: auto;
     padding: 20px;
     width: 80%;
-    line-height: 30px;
 }
 .close{
     color: white;
