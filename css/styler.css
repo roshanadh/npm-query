@@ -89,7 +89,7 @@ button:hover {
     top: 40%;
     left: 25%;
     width: 50%;
-    height: max-content;
+    height: 50%;
     overflow: auto;
     background-color: rgba(36, 37, 42, 0.8);
     color: #fefefe;
