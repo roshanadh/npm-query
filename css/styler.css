@@ -5,6 +5,60 @@ body{
     font-size: 18px;
     color: rgba(36, 37, 42, 1);
 }
+@media only screen and (max-width: 800px){
+    #logo{
+        width: 400px;
+        height: 120px;
+        left: 22%;
+        margin-top: 50px;
+    }
+    #body-content{
+        margin: 150px 100px 20px 100px;
+        padding: 30px;
+    }
+    .form-category{
+        font-size: 40px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(36, 37, 42, 0.3);
+    }
+    input[type=text], input[type=date]{
+        height: 70px;
+        padding: 0px 15px;
+        font-size: 25px;
+        border-radius: 50px;
+    } 
+    input[type=radio]{
+        width: 5%;
+        height: 2em;
+    }
+    span label{
+        font-size: 35px;
+    }
+    .about-stats-value{
+        font-size: 18px;
+        color: gray;
+    }
+    button{
+        font-size: 28px;
+        height: 70px;
+        border-radius: 50px;
+    }
+    .modal{
+        top: 40%;
+        height: 25%;
+        width: 80%;
+        left:10%; 
+    }
+    .modal-content{
+        line-height: 50px;
+    }
+    .close{
+        font-size: 50px;
+    }
+    .fetch-data{
+        font-size: 35px;
+    }
+}
 @media only screen and (min-width: 800px) and (max-width: 1000px){
     #logo{
         width: 500px;
