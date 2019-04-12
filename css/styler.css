@@ -5,6 +5,17 @@ body{
     font-size: 18px;
     color: rgba(36, 37, 42, 1);
 }
+#logo{
+    margin: 20px 0 0 470px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(36, 37, 42, 0.1);
+    transition: 1s ease-in-out;
+}
+#logo:hover{
+    box-shadow: 0px 10px 20px rgba(36, 37, 42, 0.5);
+}
 @media only screen and (max-width: 800px){
     #body-content{
         margin: 100px 150px;
@@ -25,16 +36,14 @@ body{
 }
 @media only screen and (min-width: 1200px){
     #body-content{
-        margin: 100px 400px;
+        margin: 20px 400px;
         padding: 25px;
     }
 }
 #body-content{
     background-color: rgba(238, 238, 238, 1); 
-    rgba(228, 241, 254, 1)
-    transition: 1s ease-in-out;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(36, 37, 42, 0.5);
+    box-shadow: 0px 0px 20px rgba(36, 37, 42, 0.3);
 }
 input[type=text], input[type=date]{
     width: 100%;
