@@ -81,31 +81,27 @@ button:hover {
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(36, 37, 42, 0.05);
 }
-/* The Modal (background) */
 .modal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    top: 40%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 35%;
     left: 25%;
     width: 50%;
-    height: 50%;
+    height: 30%;
     overflow: auto;
     background-color: rgba(36, 37, 42, 0.8);
     color: #fefefe;
     border-radius: 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
-/* Modal Content */
 .modal-content{
     text-align: center;
     margin: auto;
     padding: 20px;
     width: 80%;
     line-height: 30px;
-    overflow-y: auto;
 }
-/* The Close Button */
 .close{
     color: white;
     float: right;
