@@ -6,24 +6,36 @@ body{
     color: rgba(36, 37, 42, 1);
 }
 @media only screen and (max-width: 800px){
+    #logo{
+        left: 38%;
+    }
     #body-content{
         margin: 20px 150px;
         padding: 25px;
     }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px){
+    #logo{
+        left: 39%;
+    }
     #body-content{
         margin: 20px 200px;
         padding: 25px;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
+    #logo{
+        left: 41%;
+    }
     #body-content{
         margin: 20px 300px;
         padding: 25px;
     }
 }
 @media only screen and (min-width: 1200px){
+    #logo{
+        left: 42%;
+    }
     #body-content{
         margin: 20px 400px;
         padding: 25px;
@@ -35,8 +47,7 @@ body{
 }
 #logo{
     position: relative;
-    left: 50%;
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(36, 37, 42, 0.05);
