@@ -2,8 +2,8 @@ function makeRequest(){
     const http = new XMLHttpRequest();
     let url;
     let pkg = document.getElementById("pkg-name").value; 
-    let statValue = document.querySelector('input[name="stat-value"]:checked').value;
-    let statFor = document.querySelector('input[name="stat-for"]:checked').value;
+    let statValue = document.querySelector('input[name="stats-value"]:checked').value;
+    let statFor = document.querySelector('input[name="stats-for"]:checked').value;
     let fromDate = document.getElementById("from-date").value;
     let toDate = document.getElementById("to-date").value;
     let statsModal = document.getElementById("stats-modal");
@@ -23,7 +23,7 @@ function makeRequest(){
         http.open("GET", url);
         http.send();
         http.onreadystatechange = (e) => {
-            let statValue = document.querySelector('input[name="stat-value"]:checked').value;
+            let statValue = document.querySelector('input[name="stats-value"]:checked').value;
     
             statsModal.style.display = "block";
             fetchData.innerText = "";
