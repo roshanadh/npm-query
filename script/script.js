@@ -18,17 +18,56 @@ function makeRequest(){
     http.onreadystatechange = (e) => {
         let statsModal = document.getElementById("stats-modal");
         let fetchData = document.getElementsByClassName("fetch-data")[0];
+        let statValue = document.querySelector('input[name="stat-value"]:checked').value;
+
         statsModal.style.display = "block";
         fetchData.innerText = "";
 
-        var json = JSON.parse(http.responseText);
-        for(var key in json){
-            if(json.hasOwnProperty(key)){
-                fetchData.innerHTML += key.bold() + ": " + json[key] + "<br>";
+        if(statValue == "point"){
+            console.log("POINT REACHED");
+            var json = JSON.parse(http.responseText);
+            console.log(json);
+            for(var key in json){
+                if(json.hasOwnProperty(key)){
+                    fetchData.innerHTML += key.bold() + ": " + json[key] + "<br>";
+                    console.log(key.bold() + ": " + json[key]);
+                }
             }
         }
+        else if(statValue == "range"){
+            console.log("RANGE REACHED");
+            var json = JSON.parse(http.responseText);
+            for(var key in json){
+                if(json.hasOwnProperty(key)){
+                    if(key != "downloads"){
+                        console.log("DOWNLOAD NOT REACHED!");
+                        fetchData.innerHTML += key.bold() + ": " + json[key] + "<br>";
+                        console.log(key.bold() + ": " + json[key]);
+                    }
+                    else{
+                        console.log("DOWNLOADS REACHED!");
+                        var jsonArray = json.downloads;
+                        jsonArray.forEach((nestedJson) => {
+                            var needLineBreak = 0;
+                            for(var nestedKey in nestedJson){
+                                fetchData.innerHTML += nestedKey.bold() + ": " + nestedJson[nestedKey] + " ";
+                                needLineBreak = (needLineBreak + 1) % 2;
+                                if(needLineBreak == 0)
+                                    fetchData.innerHTML += "<br>";
+                                console.log(nestedKey, nestedJson[nestedKey]);
+                            }
+                        });
+                    }
+                }
+                else{
+                    console.log("json doesnot have key!");
+                }
+            }
+        }   
+        
     }
 }
+
 
 function toggleFromToDate(element){
     let fromDate = document.getElementById("from-date");
