@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Query your npm package</title>
+        <link type="text/css" rel="stylesheet" href="css/styler.css">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="body-content">
+            <span class="form-category">
+                <label>Package name</label>
+                <input type="text" id="pkg-name">
+            </span>
+            <span class="form-category">
+                <label>Stat type</label>
+                <span id="radio-span">
+                    <input type="radio" name="stat-value" value="point" checked="checked"> Point<br>
+                    <span class="about-stat-value">
+                        Point type gets the total downloads for a given period, for all packages or a specific package.<br><br>
+                    </span>
+                    <input type="radio" name="stat-value" value="range"> Range<br>
+                    <span class="about-stat-value">
+                        Range type gets the downloads per day for a given period, for all packages or a specific package.
+                    </span>
+                </span>
+            </span>
+            <span class="form-category">
+                <label>Stat for</label>
+                <span id="radio-span">
+                    <label>    
+                        <input type="radio" name="stat-for" value="last-day" onclick="toggleFromToDate(this)"> Last day
+                    </label>
+                    <label>    
+                        <input type="radio" name="stat-for" value="last-week" onclick="toggleFromToDate(this)"> Last week
+                    </label>
+                    <label>
+                        <input type="radio" name="stat-for" value="last-month" onclick="toggleFromToDate(this)"> Last month
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="stat-for" value="none" onclick="toggleFromToDate(this)" checked="checked"> Specify
+                    </label>
+                </span>
+            </span>
+            <span class="form-category">
+                <label>From</label>
+                <input type="date" id="from-date">
+            </span>
+            <span class="form-category">
+                <label>To</label>
+                <input type="date" id="to-date">
+            </span>
+            <span>
+                <button id="query-btn" onclick="makeRequest()">Query</button>
+            </span>
+        </div>
+    </body>
+</html>

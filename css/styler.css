@@ -1,0 +1,85 @@
+@import url('../res/FiraCode_1.206/fira_code.css');
+body{
+    background-color:rgba(82, 179, 217, 1);
+    font-family: Fira Code, 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgba(36, 37, 42, 1);
+}
+@media only screen and (max-width: 800px){
+    #body-content{
+        margin: 100px 150px;
+        padding: 25px;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+    #body-content{
+        margin: 100px 200px;
+        padding: 25px;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+    #body-content{
+        margin: 100px 300px;
+        padding: 25px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #body-content{
+        margin: 100px 400px;
+        padding: 25px;
+    }
+}
+#body-content{
+    background-color: rgba(238, 238, 238, 1); 
+    transition: 1s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(36, 37, 42, 0.5);
+}
+input[type=text], input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 20px rgba(36, 37, 42, 0.1);
+} 
+input[type="radio"] {
+   
+}
+#radio-span{
+    display: inline-block;
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 10px 0;
+}
+.about-stat-value{
+    text-align: justify;
+    font-size: 13px;
+    color: gray;
+}
+button{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(36, 37, 42, 0.4);
+    
+}
+button:hover {
+    background-color: #45a049;
+    transition: 0.5s ease-in-out;
+}
+.form-category{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+  
