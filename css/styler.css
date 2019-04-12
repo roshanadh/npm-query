@@ -97,19 +97,21 @@ button:hover {
 }
 /* Modal Content */
 .modal-content{
-  margin: auto;
-  padding: 20px;
-  width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    line-height: 30px;
 }
 /* The Close Button */
 .close{
-  color: white;
-  float: right;
-  font-size: 28px;
-  margin-right: 10px;
+    color: white;
+    float: right;
+    font-size: 28px;
+    margin-right: 10px;
 }
 .close:hover, .close:focus{
-  color: red;
-  text-decoration: none;
-  cursor: pointer;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
 }
