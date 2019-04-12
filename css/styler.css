@@ -1,6 +1,6 @@
 @import url('../res/FiraCode_1.206/fira_code.css');
 body{
-    background-color:rgba(82, 179, 217, 1);
+    background-color:rgba(228, 241, 254, 1);
     font-family: Fira Code, 'Courier New', Courier, monospace;
     font-size: 18px;
     color: rgba(36, 37, 42, 1);
@@ -31,6 +31,7 @@ body{
 }
 #body-content{
     background-color: rgba(238, 238, 238, 1); 
+    rgba(228, 241, 254, 1)
     transition: 1s ease-in-out;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(36, 37, 42, 0.5);
