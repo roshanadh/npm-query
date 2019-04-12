@@ -81,4 +81,35 @@ button:hover {
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(36, 37, 42, 0.05);
 }
-  
+/* The Modal (background) */
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: max-content;
+    overflow: auto;
+    background-color: rgba(36, 37, 42, 0.8);
+    color: #fefefe;
+    border-radius: 10px;
+}
+/* Modal Content */
+.modal-content{
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+/* The Close Button */
+.close{
+  color: white;
+  float: right;
+  font-size: 28px;
+  margin-right: 10px;
+}
+.close:hover, .close:focus{
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
