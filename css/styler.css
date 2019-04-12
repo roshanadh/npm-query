@@ -15,12 +15,19 @@ body{
         padding: 25px;
     }
     .form-category{
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 30px;
+    }
+    input[type=radio]{
+        width: 5%;
+        height: 2em;
     }
     .about-stat-value{
         font-size: 18px;
         color: gray;
+    }
+    button{
+        font-size: 25px;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
@@ -34,6 +41,13 @@ body{
     .form-category{
         margin-bottom: 20px;
     }
+    .about-stat-value{
+        font-size: 15px;
+        color: gray;
+    }
+    button{
+        font-size:20px;
+    }
 }
 @media only screen and (min-width: 1200px){
     #logo{
@@ -45,6 +59,13 @@ body{
     }
     .form-category{
         margin-bottom: 20px;
+    }
+    .about-stat-value{
+        font-size: 13px;
+        color: gray;
+    }
+    button{
+        font-size:20px;
     }
 }
 #logo-content{
@@ -86,7 +107,6 @@ input[type=text], input[type=date]{
 }
 .about-stat-value{
     text-align: center;
-    font-size: 13px;
     color: gray;
 }
 button{
@@ -99,7 +119,6 @@ button{
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0px 5px 20px rgba(36, 37, 42, 0.4);
-    
 }
 button:hover {
     background-color: #45a049;
