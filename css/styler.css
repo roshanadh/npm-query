@@ -94,6 +94,7 @@ button:hover {
     background-color: rgba(36, 37, 42, 0.8);
     color: #fefefe;
     border-radius: 10px;
+    overflow-y: scroll;
 }
 /* Modal Content */
 .modal-content{
@@ -102,6 +103,7 @@ button:hover {
     padding: 20px;
     width: 80%;
     line-height: 30px;
+    overflow-y: auto;
 }
 /* The Close Button */
 .close{
