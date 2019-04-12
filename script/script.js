@@ -16,11 +16,17 @@ function makeRequest(){
     http.open("GET", url);
     http.send();
     http.onreadystatechange = (e) => {
-        console.log(http.responseText);
         let statsModal = document.getElementById("stats-modal");
         let fetchData = document.getElementsByClassName("fetch-data")[0];
         statsModal.style.display = "block";
-        fetchData.innerText = http.responseText;
+        fetchData.innerText = "";
+
+        var json = JSON.parse(http.responseText);
+        for(var key in json){
+            if(json.hasOwnProperty(key)){
+                fetchData.innerHTML += key.bold() + ": " + json[key] + "<br>";
+            }
+        }
     }
 }
 
